@@ -1,0 +1,25 @@
+:root {
+  // Colors
+  --color-white: #ffffff;
+  --color-black: #111111;
+
+  --color-gray-lighter: #e6e6e6;
+  --color-gray-light: #d0d0d0;
+  --color-gray-medium: #8c8c8c;
+  --color-gray-dark: #666;
+  --color-gray-darker: #333;
+
+  --color-orchid: #e7a19f;
+  --color-red: #7e2731;
+  // Typography
+  --type-primary: "Founders Grotesk", "Helvetica", sans-serif;
+  --type-secondary: "Ogg Roman", "Georgia", serif;
+
+  // Theme
+  --footer-border: var(--color-white);
+
+  --header-bg: var(--color-white);
+  --header-border: transparent;
+
+  --logo-fill: var(--color-white);
+}

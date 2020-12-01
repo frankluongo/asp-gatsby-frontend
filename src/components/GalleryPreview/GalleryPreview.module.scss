@@ -1,0 +1,17 @@
+.Preview {
+  position: relative;
+
+  min-width: 100vw;
+}
+
+.Cover {
+  bottom: 0;
+  left: 0;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+}
+
+.Cover img {
+  object-fit: contain !important;
+}

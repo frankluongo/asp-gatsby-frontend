@@ -1,0 +1,9 @@
+.wrapper {
+  width: 100%;
+  max-width: map-get($theme, containerWidth);
+  @include spacing-inline(margin, auto);
+}
+
+.wrapper--slim {
+  max-width: map-get($theme, containerWidthSlim);
+}

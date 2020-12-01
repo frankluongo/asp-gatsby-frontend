@@ -1,0 +1,22 @@
+$sizes: (
+  small: 12px,
+  medium: 15px,
+  large: 24px,
+  xlarge: 32px,
+);
+
+@each $name, $value in $sizes {
+  .fs-#{$name} {
+    font-size: $value;
+  }
+}
+
+@each $point, $value in $breakpoints {
+  @include media($value) {
+    @each $name, $value in $sizes {
+      .#{$point}\:fs-#{$name} {
+        font-size: $value;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/base";
+
+.Logo {
+  max-width: 196px;
+}
+
+@media (min-width: map-get($breakpoints, md)) {
+  .Logo {
+    max-width: none;
+    fill: var(--logo-fill);
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/base";
+
+.Header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+
+  // background-color: var(--header-bg);
+}
+
+.H1 {
+  flex: 1 1 auto;
+}
+
+@media (min-width: map-get($breakpoints, md)) {
+  .Header {
+    bottom: var(--footer-height);
+    flex-direction: column;
+    max-width: 360px;
+  }
+
+  .H1 {
+    flex: 0 1 auto;
+  }
+
+  @supports (mix-blend-mode: difference) {
+    .Header {
+      background-color: transparent;
+      mix-blend-mode: difference;
+    }
+  }
+}

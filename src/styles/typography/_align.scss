@@ -1,0 +1,17 @@
+$alignments: (left, center, right);
+
+@each $align in $alignments {
+  .text-align-#{$align} {
+    text-align: $align;
+  }
+}
+
+@each $point, $value in $breakpoints {
+  @include media($value) {
+    @each $align in $alignments {
+      .#{$point}\:text-align-#{$align} {
+        text-align: $align;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+import React from "react"
+import { ElementsProvider } from "@context"
+import "@styles/fontImports.css"
+import "@styles/application.scss"
 
-// You can delete this file if you're not using it
+export function wrapPageElement({ element, props }) {
+  return <ElementsProvider {...props}>{element}</ElementsProvider>
+}

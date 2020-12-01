@@ -1,0 +1,60 @@
+@import "../../styles/base";
+
+.Nav {
+  top: var(--header-height);
+
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+
+  background-color: white;
+}
+
+.Link {
+  color: var(--color-gray-darker);
+  text-decoration: none;
+}
+
+.Primary {
+  font-size: 30px;
+}
+
+.Secondary {
+  font-size: 24px;
+}
+
+.Wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: map-get($breakpoints, md)) {
+  .Nav {
+    width: auto;
+    height: auto;
+    margin-bottom: 25vh;
+
+    background-color: transparent;
+  }
+
+  .Link {
+    color: var(--color-white);
+  }
+
+  .Link:hover {
+    font-style: italic;
+  }
+
+  .Primary {
+    font-size: 30px;
+  }
+
+  .Secondary {
+    font-size: 15px;
+  }
+
+  .Container {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+  }
+}
